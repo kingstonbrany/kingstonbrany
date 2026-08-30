@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KingstonBrany — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/jpg" href="./images/hacker.jpg">
+<meta name="description" content="Ssewankambo Kingston Brany is an aspiring computer programmer and web application designer.He is an experienced computer user in multiple fields such as SQL programming and Python.Visit his portifolio to find more.">
+<meta name="keywords" content="Kingston Brany, Ssewankambo Kingston Brany , web design, HTML, CSS, programming, cybersecurity, computer programmer , website designer , kingstonbrany , kingstonbranysite , simply introvert, the introvert  ">
+<meta name="kingstonbrany" content="Kingston Brany">
+<meta name="robots" content="index, follow">
+  
+</head>
+<body>
+
+  <!-- Navigation (hardcoded so it always shows, even if JS fails) -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="login.html" class="brand">KINGSTON<span>BRANY</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-page="index">Home</a>
+        <a href="info.html" class="nav-link" data-page="info">Info</a>
+        <a href="projects.html" class="nav-link" data-page="projects">Projects</a>
+        <a href="more.html" class="nav-link" data-page="more">More</a>
+        <a href="admin.html" class="nav-link admin-link" data-page="admin" hidden>Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="hero">
+      <div class="profile-frame" id="profile-frame">
+        <img src='./images/img2.jpg' id="profile-pic-img" alt="Kingston Brany" />
+        <div class="profile-placeholder" id="profile-placeholder">
+          <span>&#128247;</span>
+          <small>Photo appears once set in Admin</small>
+        </div>
+      </div>
+      <span class="hero-badge">"I am simply an Introvert."</span>
+      <h1>KINGSTONBRANY</h1>
+      <p class="tagline">Welcome to the Kingston Brany website. Designer, developer, and security-minded builder crafting clean digital experiences.</p>
+           <p class="tagline">I am here to help with whatever is to do with ICT and Software development for future development and hope we can get to work together.</p>
+<p></p>
+
+      <div class="cta">
+        <a href="info.html" class="btn btn-primary">View abilities</a>
+        <a href="projects.html" class="btn btn-ghost">See projects</a>
+      </div>
+      <div class="stats-block">
+        <div class="stat-row">
+          <div class="stat-label"><span>Programming Skills</span><span>90%</span></div>
+          <div class="stat-bar"><div class="stat-fill" data-target="50"></div></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-label"><span>Web Application Management</span><span>99%</span></div>
+          <div class="stat-bar"><div class="stat-fill" data-target="99"></div></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-label"><span>Coperativeness</span><span>81%</span></div>
+          <div class="stat-bar"><div class="stat-fill" data-target="81"></div></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-label"><span>Gaming Experience</span><span>92%</span></div>
+          <div class="stat-bar"><div class="stat-fill" data-target="92"></div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (hardcoded too) -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> KingstonBrany. All rights reserved.</p>
+  </footer>
+
+  <!-- Supabase library from CDN -->
+
+  <!-- Shared helpers (auth, nav highlighting) -->
+  <script src="js/config.js"></script>
+  <!-- Home page logic -->
+  <script src="js/home.js"></script>
+</body>
+</html>

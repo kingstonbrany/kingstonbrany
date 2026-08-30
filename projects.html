@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KingstonBrany — Home</title>
+  <link rel="icon" type="image/jpg" href="./images/hacker.jpg">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation (hardcoded so it always shows, even if JS fails) -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="login.html" class="brand">KINGSTON<span>BRANY</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-page="index">Home</a>
+        <a href="info.html" class="nav-link" data-page="info">Info</a>
+        <a href="projects.html" class="nav-link" data-page="projects">Projects</a>
+        <a href="more.html" class="nav-link" data-page="more">More</a>
+        <a href="admin.html" class="nav-link admin-link" data-page="admin" hidden>Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <h1 class="page-title">Projects</h1>
+    <p class="page-sub">A selection of work from my GitHub repositories.</p>
+    <div class="projects-grid" id="projects-grid">
+      <div class="feed-loading">Still Adding Projects,check in later...</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kingston Brany. All rights reserved.</p>
+  </footer>
+
+
+  <script src="js/config.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

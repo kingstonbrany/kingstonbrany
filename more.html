@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KingstonBrany — Home</title>
+  <link rel="icon" type="image/jpg" href="./images/hacker.jpg">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation (hardcoded so it always shows, even if JS fails) -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="login.html" class="brand">KINGSTON<span>BRANY</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-page="index">Home</a>
+        <a href="info.html" class="nav-link" data-page="info">Info</a>
+        <a href="projects.html" class="nav-link" data-page="projects">Projects</a>
+        <a href="more.html" class="nav-link" data-page="more">More</a>
+        <a href="admin.html" class="nav-link admin-link" data-page="admin" hidden>Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <h1 class="page-title">Let's Get in touch</h1>
+    <p class="page-sub">Lets get in touch and get work done together. Find me on any of your favorite platforms.</p>
+
+    <div class="socials">
+      <a class="social" href="https://github.com" target="_blank" rel="noopener">
+        <div class="icon">GH</div>
+        <div class="meta"><div class="name">GitHub</div><div class="handle">@kingstonbrany</div></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="social" href="https://www.instagram.com/k.i.n.g.s.t.o.n.a/" target="_blank">
+        <div class="icon">IG</div>
+        <div class="meta"><div class="name">Instagram</div><div class="handle">/in/kingstonbrany</div></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="social" href="https://wa.me/256745833764" target="_blank">
+        <div class="icon">WA</div>
+        <div class="meta"><div class="name">Whatsapp</div><div class="handle">@kingstonbrany</div></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="social" href="https://t.me/kingstonbrany" target="_blank">
+        <div class="icon">TL</div>
+        <div class="meta"><div class="name">Telegram</div><div class="handle">@kingstonbrany</div></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="social" href="https://dribbble.com" target="_blank" rel="noopener">
+        <div class="icon">DR</div>
+        <div class="meta"><div class="name">Dribbble</div><div class="handle">@kingstonbrany</div></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="social" href="mailto:kingstonbrany@gmail.com?subject=Contact%20from%20KingstonBrany%20Website&amp;body=Hello%20KingstonBrany%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20you.">
+        <div class="icon">&#9993;</div>
+        <div class="meta"><div class="name">Gmail</div><div class="handle">kingstonbrany@gmail.com</div></div>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+
+    <h2 class="section-heading">Updates</h2>
+    <p class="page-sub">This is my Blog section for notes and updates.</p>
+    <div class="feed" id="feed">
+      <div class="feed-loading">No updates currently,chech in later.</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kingston Brany. All rights reserved.</p>
+  </footer>
+
+
+  <script src="js/config.js"></script>
+  <script src="js/more.js"></script>
+</body>
+</html>

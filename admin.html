@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kingston Hacker — Admin</title>
+  <link rel="icon" type="image/jpg" href="./images/hacker.jpg">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">KINGSTON<span>HACKER</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-page="index">Home</a>
+        <a href="info.html" class="nav-link" data-page="info">Info</a>
+        <a href="projects.html" class="nav-link" data-page="projects">Projects</a>
+        <a href="more.html" class="nav-link" data-page="more">More</a>
+        <a href="admin.html" class="nav-link admin-link" data-page="admin" hidden>Admin</a>
+        <a href="login.html" class="nav-link login-link" data-page="login">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="admin-header">
+      <div>
+        <h1 class="page-title">Admin Dashboard</h1>
+        <p class="page-sub">Manage your profile, updates, and projects.</p>
+      </div>
+      <button class="btn btn-ghost" id="logout-btn">Log out</button>
+    </div>
+
+    <!-- Profile photo section -->
+    <div class="admin-section">
+      <h2 class="admin-section-title">&#128247; Profile Photo</h2>
+      <div class="admin-profile-row">
+        <div class="profile-frame profile-frame-sm" id="admin-profile-frame">
+          <img id="admin-profile-img" alt="Profile" style="display:none;" />
+          <div class="profile-placeholder" id="admin-profile-placeholder">
+            <span>&#128247;</span>
+            <small>No photo yet</small>
+          </div>
+        </div>
+        <div class="admin-profile-controls">
+          <label class="btn btn-ghost" for="admin-profile-file">Choose photo</label>
+          <input id="admin-profile-file" type="file" accept="image/png,image/jpeg,image/webp" hidden />
+          <span class="upload-msg" id="admin-profile-msg"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post an update section -->
+    <div class="admin-section">
+      <h2 class="admin-section-title">&#8593; Post an Update</h2>
+      <div class="upload-card">
+        <div class="field">
+          <label for="up-title">Title</label>
+          <input id="up-title" type="text" placeholder="What's the headline?" maxlength="120" />
+        </div>
+        <div class="field">
+          <label for="up-body">Message</label>
+          <textarea id="up-body" placeholder="Write your update here..." maxlength="1000"></textarea>
+        </div>
+        <div class="field">
+          <label for="up-image">Attach an image (optional)</label>
+          <input id="up-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif" class="file-input" />
+          <div class="image-preview" id="up-preview" hidden>
+            <img id="up-preview-img" alt="Preview" />
+            <button class="remove-img" id="up-remove-img" type="button">Remove</button>
+          </div>
+        </div>
+        <div class="upload-actions">
+          <button class="btn-upload" id="up-submit">&#8593; Post update</button>
+          <span class="upload-msg" id="up-msg"></span>
+        </div>
+      </div>
+      <div class="feed" id="feed">
+        <div class="feed-loading">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Manage projects section -->
+    <div class="admin-section">
+      <h2 class="admin-section-title">&#128193; Manage Projects</h2>
+      <div class="upload-card">
+        <div class="field">
+          <label for="proj-title">Project title</label>
+          <input id="proj-title" type="text" placeholder="My awesome project" maxlength="120" />
+        </div>
+        <div class="field">
+          <label for="proj-desc">Description</label>
+          <textarea id="proj-desc" placeholder="What does it do?" maxlength="500"></textarea>
+        </div>
+        <div class="field">
+          <label for="proj-repo">GitHub repo URL</label>
+          <input id="proj-repo" type="url" placeholder="https://github.com/kingstonbrany/repo" />
+        </div>
+        <div class="field">
+          <label for="proj-demo">Live demo URL (optional)</label>
+          <input id="proj-demo" type="url" placeholder="https://mydemo.com" />
+        </div>
+        <div class="field">
+          <label for="proj-tags">Tech tags (comma-separated)</label>
+          <input id="proj-tags" type="text" placeholder="JavaScript, Python, SQL" />
+        </div>
+        <div class="upload-actions">
+          <button class="btn-upload" id="proj-submit">Add project</button>
+          <span class="upload-msg" id="proj-msg"></span>
+        </div>
+      </div>
+      <div class="feed" id="projects-admin-list">
+        <div class="feed-loading">Loading...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Kingston Brany. All rights reserved.</p>
+  </footer>
+
+
+  <script src="js/config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
